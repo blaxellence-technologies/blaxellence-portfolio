@@ -1,0 +1,62 @@
+/* Global base (if not set yet) */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0a0a0a;
+  color: #eaeaea;
+}
+
+/* Services section */
+.services {
+  padding: 6rem 8%;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5px;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+/* Glass card */
+.service-card {
+  padding: 2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* Hover highlight */
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(0, 255, 160, 0.6);
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 160, 0.25),
+    0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Card text */
+.service-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.service-card p {
+  margin: 0;
+  line-height: 1.6;
+  color: #bfbfbf;
+}
