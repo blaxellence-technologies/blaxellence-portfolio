@@ -1,87 +1,645 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blaxellence Technologies</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="css/style.css" />
+    <title>Blaxellence Technologies | Engineering Precision</title>
+    <meta name="description" content="Blaxellence Technologies builds modern software, websites, offline systems, and digital infrastructure engineered for performance and scale.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-  <header class="site-header">
-  <div class="header-inner">
-    <div class="logo">BLAXELLENCE TECHNOLOGIES</div>
 
-    <nav class="nav">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-<section class="hero" id="home">
-  <div class="hero-content">
-    <h1>Blaxellence Technologies</h1>
-    <p>Engineering software. Designing digital power.</p>
-    <a href="#projects" class="hero-cta">View Work</a>
-  </div>
-</section>
+    <!-- Ambient background -->
+    <div class="ambient-bg"></div>
 
-<section class="services" id="services">
-  <h2 class="section-title">Services</h2>
+    <!-- NAVBAR -->
+    <header class="navbar">
 
-  <div class="services-grid">
-    <div class="service-card">
-      <h3>Software Development</h3>
-      <p>Scalable, secure, and performance-driven applications built with precision.</p>
+        <div class="container nav-container">
+
+            <div class="logo">
+                BLAXELLENCE
+                <span class="logo-accent">TECHNOLOGIES</span>
+            </div>
+
+            <nav class="nav-menu">
+
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">Philosophy</a>
+                <a href="#contact" class="nav-cta">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+                        SOFTWARE • SYSTEMS • DIGITAL INFRASTRUCTURE
+                    </span>
+
+                    <h1>
+                        Engineering Modern Software,<br>
+                        Websites & Business Systems
+                    </h1>
+
+                    <p>
+                        Blaxellence Technologies engineers high-performance digital systems —
+                        from modern websites to powerful offline software — designed for reliability,
+                        scalability, and long-term operational excellence.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#portfolio" class="btn-primary">
+                            View Portfolio
+                        </a>
+
+                        <a href="#contact" class="btn-secondary">
+                            Start a Project
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services section" id="services">
+
+            <div class="container">
+
+                <div class="section-header">
+
+                    <span class="section-badge">Capabilities</span>
+
+                    <h2 class="section-title">
+                        Engineering Services
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Precision-built solutions designed for performance, stability, and scale.
+                    </p>
+
+                </div>
+
+                <div class="services-grid">
+
+                    <!-- Service Card -->
+                    <div class="service-card" onclick="toggleService(this)">
+
+                        <div class="service-title">
+
+                            <h3>Web Development</h3>
+
+                            <span class="service-icon">+</span>
+
+                        </div>
+
+                        <div class="service-preview">
+                            Modern, fast, and conversion-optimized websites.
+                        </div>
+
+                        <div class="service-full">
+
+                            <p>
+                                High-performance websites engineered with modern technologies,
+                                optimized for speed, scalability, and business growth.
+                            </p>
+
+                            <ul>
+                                <li>Business websites</li>
+                                <li>E-commerce platforms</li>
+                                <li>Portfolio websites</li>
+                                <li>Landing pages</li>
+                                <li>Web applications & dashboards</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="service-card" onclick="toggleService(this)">
+
+                        <div class="service-title">
+
+                            <h3>Desktop & Offline Software</h3>
+
+                            <span class="service-icon">+</span>
+
+                        </div>
+
+                        <div class="service-preview">
+                            Secure offline systems for operational environments.
+                        </div>
+
+                        <div class="service-full">
+
+                            <p>
+                                Custom-engineered offline systems designed for speed,
+                                reliability, and institutional-grade stability.
+                            </p>
+
+                            <ul>
+                                <li>POS systems</li>
+                                <li>Inventory systems</li>
+                                <li>Library systems</li>
+                                <li>School management systems</li>
+                                <li>Custom enterprise tools</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="service-card" onclick="toggleService(this)">
+
+                        <div class="service-title">
+
+                            <h3>UI/UX Engineering</h3>
+
+                            <span class="service-icon">+</span>
+
+                        </div>
+
+                        <div class="service-preview">
+                            Precision-designed digital interfaces.
+                        </div>
+
+                        <div class="service-full">
+
+                            <ul>
+                                <li>Website interface design</li>
+                                <li>Dashboard systems</li>
+                                <li>Application UI design</li>
+                                <li>Landing page redesign</li>
+                                <li>Design-to-code conversion</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="service-card" onclick="toggleService(this)">
+
+                        <div class="service-title">
+
+                            <h3>Brand Systems</h3>
+
+                            <span class="service-icon">+</span>
+
+                        </div>
+
+                        <div class="service-preview">
+                            Elite brand identity and digital presence systems.
+                        </div>
+
+                        <div class="service-full">
+
+                            <ul>
+                                <li>Brand identity systems</li>
+                                <li>Logo design</li>
+                                <li>Brand kits</li>
+                                <li>Digital brand integration</li>
+                                <li>Visual system engineering</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="service-card" onclick="toggleService(this)">
+
+                        <div class="service-title">
+
+                            <h3>Deployment & Infrastructure</h3>
+
+                            <span class="service-icon">+</span>
+
+                        </div>
+
+                        <div class="service-preview">
+                            Launch and infrastructure configuration.
+                        </div>
+
+                        <div class="service-full">
+
+                            <ul>
+                                <li>Hosting setup</li>
+                                <li>Domain configuration</li>
+                                <li>Server deployment</li>
+                                <li>System installation</li>
+                                <li>Production optimization</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Service Card -->
+                    <div class="service-card" onclick="toggleService(this)">
+
+                        <div class="service-title">
+
+                            <h3>Maintenance & Support</h3>
+
+                            <span class="service-icon">+</span>
+
+                        </div>
+
+                        <div class="service-preview">
+                            Long-term system reliability and upgrades.
+                        </div>
+
+                        <div class="service-full">
+
+                            <ul>
+                                <li>System upgrades</li>
+                                <li>Bug fixes</li>
+                                <li>Feature expansion</li>
+                                <li>Performance optimization</li>
+                                <li>Technical support</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+      
+        <!-- PORTFOLIO -->
+<section class="portfolio section" id="portfolio">
+
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="section-header">
+
+            <span class="section-badge">Portfolio</span>
+
+            <h2 class="section-title">
+                Engineered Systems & Platforms
+            </h2>
+
+            <p class="section-subtitle">
+                A selection of precision-built software, platforms, and digital infrastructure.
+            </p>
+
+        </div>
+
+
+        <!-- Portfolio Grid -->
+        <div class="portfolio-grid">
+
+
+            <!-- Project 1 -->
+            <article class="portfolio-card" onclick="togglePortfolio(this)">
+
+                <div class="portfolio-title">
+
+                    <h3>
+                        Library Management System
+                    </h3>
+
+                    <span class="portfolio-icon">+</span>
+
+                </div>
+
+                <div class="portfolio-preview">
+
+                    Offline desktop system for managing books, members, and institutional operations.
+
+                </div>
+
+                <div class="portfolio-full">
+
+                    <p>
+                        A complete institutional-grade library system engineered for reliability,
+                        fast performance, and offline operational capability.
+                    </p>
+
+                    <ul>
+
+                        <li>JavaFX desktop application</li>
+
+                        <li>SQLite database architecture</li>
+
+                        <li>Book and member management</li>
+
+                        <li>Borrow and return tracking</li>
+
+                        <li>Offline-first architecture</li>
+
+                    </ul>
+
+                    <div class="portfolio-meta">
+
+                        <span class="tech-tag">Java</span>
+
+                        <span class="tech-tag">JavaFX</span>
+
+                        <span class="tech-tag">SQLite</span>
+
+                        <span class="tech-tag">Desktop Software</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 2 -->
+            <article class="portfolio-card" onclick="togglePortfolio(this)">
+
+                <div class="portfolio-title">
+
+                    <h3>
+                        Early Bird Restaurant Website
+                    </h3>
+
+                    <span class="portfolio-icon">+</span>
+
+                </div>
+
+                <div class="portfolio-preview">
+
+                    Modern responsive website engineered for restaurant brand presence.
+
+                </div>
+
+                <div class="portfolio-full">
+
+                    <p>
+                        A performance-optimized website designed to establish strong digital presence,
+                        reinforce branding, and deliver seamless user experience.
+                    </p>
+
+                    <ul>
+
+                        <li>Fully responsive design</li>
+
+                        <li>Modern UI architecture</li>
+
+                        <li>Brand-aligned visual system</li>
+
+                        <li>Optimized loading performance</li>
+
+                        <li>Mobile-first engineering</li>
+
+                    </ul>
+
+                    <div class="portfolio-meta">
+
+                        <span class="tech-tag">HTML</span>
+
+                        <span class="tech-tag">CSS</span>
+
+                        <span class="tech-tag">JavaScript</span>
+
+                        <span class="tech-tag">Web Platform</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 3 -->
+            <article class="portfolio-card" onclick="togglePortfolio(this)">
+
+                <div class="portfolio-title">
+
+                    <h3>
+                        Blaxellence Technologies Platform
+                    </h3>
+
+                    <span class="portfolio-icon">+</span>
+
+                </div>
+
+                <div class="portfolio-preview">
+
+                    Official company platform engineered for scalability and brand authority.
+
+                </div>
+
+                <div class="portfolio-full">
+
+                    <p>
+                        A scalable company platform designed to showcase services,
+                        portfolio, and technical capabilities with elite visual presentation.
+                    </p>
+
+                    <ul>
+
+                        <li>Modular expandable architecture</li>
+
+                        <li>Dark engineering aesthetic</li>
+
+                        <li>Performance optimized</li>
+
+                        <li>Future-ready for React migration</li>
+
+                        <li>Conversion-focused design</li>
+
+                    </ul>
+
+                    <div class="portfolio-meta">
+
+                        <span class="tech-tag">HTML</span>
+
+                        <span class="tech-tag">CSS</span>
+
+                        <span class="tech-tag">JavaScript</span>
+
+                        <span class="tech-tag">Brand Platform</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- Project 4 (Future Ready Placeholder) -->
+            <article class="portfolio-card future-card">
+
+                <div class="portfolio-title">
+
+                    <h3>
+                        Upcoming Systems
+                    </h3>
+
+                </div>
+
+                <div class="portfolio-preview">
+
+                    New engineering projects currently under development.
+
+                </div>
+
+            </article>
+
+
+        </div>
+
     </div>
 
-    <div class="service-card">
-      <h3>Web & UI Engineering</h3>
-      <p>Modern, responsive interfaces with smooth interactions and clean architecture.</p>
+</section>
+       <section id="about" class="section reveal">
+
+    <div class="container">
+
+        <div class="section-header">
+
+            <span class="section-badge">
+                Philosophy
+            </span>
+
+            <h2 class="section-title">
+                The Engineering Approach
+            </h2>
+
+        </div>
+
+        <div class="about-grid">
+
+            <!-- TEXT CONTENT -->
+            <div class="about-text">
+
+                <p>
+                    At Blaxellence Technologies, we approach software as an engineered structure —
+                    not a temporary construct, but a permanent digital foundation. Every system we
+                    build is designed with structural integrity, operational efficiency, and long-term
+                    scalability at its core.
+                </p>
+
+                <p>
+                    We believe modern businesses require more than just websites or applications —
+                    they require digital infrastructure. Infrastructure that performs under load,
+                    adapts to growth, and maintains reliability over time. Our process mirrors
+                    engineering disciplines used in architecture and mechanical design: analysis,
+                    planning, structural modeling, and precision implementation.
+                </p>
+
+                <p>
+                    Our objective is not simply to build software, but to create systems that
+                    enhance operational capability, improve efficiency, and provide measurable
+                    technical advantage. Every line of code, every interface, and every system
+                    component serves a defined functional purpose.
+                </p>
+
+                <p>
+                    Blaxellence Technologies exists to engineer the digital backbone of modern
+                    businesses — stable, scalable, and built for the future.
+                </p>
+
+            </div>
+
+            <!-- IMAGE CONTAINER -->
+            <div class="about-image">
+
+                <!-- Replace with your actual image -->
+                <img src="images/engineering.jpg"
+                     alt="Blaxellence Engineering Systems">
+
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="service-card">
-      <h3>Branding & Digital Identity</h3>
-      <p>Visual systems and digital presence crafted for authority and clarity.</p>
-    </div>
-
-    <div class="service-card">
-      <h3>Technical Consulting</h3>
-      <p>Strategic guidance, system design, and technology decisions done right.</p>
-    </div>
-  </div>
-</section>
-<section class="projects" id="projects">
-  <h2 class="section-title">Selected Work</h2>
-  <div class="projects-grid">
-    <article class="project-card">
-      <h3>Blaxellence Portfolio</h3>
-      <p>Dark, glassmorphic landing page with motion.</p>
-      <span class="stack">HTML • CSS • JS</span>
-      <div class="links">
-        <a href="https://github.com/yourusername/blaxellence-portfolio" target="_blank">GitHub</a>
-<a href="https://yourdomain.com" target="_blank">Live</a>
-      </div>
-    </article>
-    <!-- repeat -->
-  </div>
-</section>
-<section class="about" id="about">
-  <h2 class="section-title">About Blaxellence</h2>
-  <p class="about-text">
-    Blaxellence Technologies engineers modern software and digital experiences
-    with precision, clarity, and long-term vision.
-  </p>
-</section>
-<section class="contact" id="contact">
-  <h2 class="section-title">Start a Project</h2>
-  <a class="hero-cta" href="mailto:kevmwaura32@gmail.com">Get in Touch</a>
 </section>
 
-  <script src="js/main.js"></script>
+        <!-- CONTACT -->
+        <section class="contact section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-box">
+
+                    <h2>Initiate a Project</h2>
+
+                    <p>
+                        Describe your requirements and begin building your next system.
+                    </p>
+
+                    <a href="mailto:hello@blaxellence.tech" class="btn-primary">
+                        hello@blaxellence.tech
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+
+                <h3>BLAXELLENCE TECHNOLOGIES</h3>
+
+                <p>
+                    Engineering software, systems, and digital infrastructure.
+                </p>
+
+            </div>
+
+            <div>
+
+                <p>
+                    © 2026 Blaxellence Technologies
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+
 </body>
+
 </html>
